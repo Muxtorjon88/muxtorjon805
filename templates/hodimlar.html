@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hodimlar</title>
+</head>
+<body>
+<header>
+{% extends 'base.html' %}
+
+{% block content %}
+<p>Hodimlar haqida ma`lumot</p>
+<a href="{% url 'tuychiev' %}">To`ychiyev Muxtorjon</a>
+</header>
+
+<header>
+<a href="{% url 'yuldasheva' %}">Yuldasheva Go`zal</a>
+</header>
+
+<header>
+<a href="{% url 'ziyodullo' %}">Eminov Ziyodulla</a>
+</header>
+
+
+{% endblock content %}
+</body>
+</html>
